@@ -47,6 +47,14 @@
 		<ValidationMessage For="@(() => objHelpDeskTicket.TicketDate)" />
 	</div>
 	<div>
+
+		<SfTextBox Placeholder="Ticket Description"
+							 FloatLabelType="@FloatLabelType.Always"
+							 @bind-Value="@objHelpDeskTicket.TicketDescription"></SfTextBox>
+		<ValidationMessage For="@(() => objHelpDeskTicket.TicketDescription)" />
+
+	</div>
+	<div>
 		<SfTextBox Placeholder="Requester Email"
 							 FloatLabelType="@FloatLabelType.Always"
 							 @bind-Value="objHelpDeskTicket.TicketRequesterEmail"></SfTextBox>
